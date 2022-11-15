@@ -42,26 +42,3 @@ class _CounterModuleState extends State<CounterModule> {
     );
   }
 }
-
-/*
-CounterRepository counterRepository = CounterRepositoryHttp();
-CounterUseCase counterUseCase = CounterUseCase(counterRepository);
-CounterController counterController = CounterController(counterUseCase);
-
-class CounterModule extends StatelessWidget {
-  const CounterModule({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    if (counterController.isNotLoaded) {
-      counterController.loadCounter();
-    }
-    return AnimatedBuilder(
-      animation: counterController,
-      builder: (context, child) {
-        return CounterScreen(controller: counterController);
-      },
-    );
-  }
-}
-*/
