@@ -8,7 +8,7 @@ class CounterEntity {
   }
 
   factory CounterEntity.fromJson(Map<String, dynamic> map) {
-    return CounterEntity(value: map["value"] ?? 0);
+    return CounterEntity(value: int.tryParse(map["value"].toString()) ?? 0);
   }
 
   Map<String, dynamic> toJson() {
